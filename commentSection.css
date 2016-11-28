@@ -1,0 +1,36 @@
+	
+	#commentSection{
+		margin-top: 20px;
+	}
+
+
+	#commentSection font{
+		font-size: 10px;
+		display: block;
+		margin: 5px 0px 5px 5px;
+
+
+	}
+
+
+	#commentSection input{
+		margin: 10px 0px 0px 5px;
+		width: 175px;
+		height: 35px;
+		background-color: #459F45;
+		font-size: 15px ;
+		color: white;
+	}
+
+
+	#getHelp {
+		margin: 10px;
+
+	}
+
+	
+	#getHelp a{
+		color: #585858;
+		font-size: 12px;
+	}
+

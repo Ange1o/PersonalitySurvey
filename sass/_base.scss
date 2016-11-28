@@ -1,0 +1,14 @@
+
+$mainFontFamily:Arial, Helvetica, sans-serif; 
+$mainFontSize: 14px;
+
+$primaryColor: #DEE0E2;
+$secondaryColor: white; 
+
+/*Media Queries*/
+
+/*Smartphones (Portrait and landscape)*/
+$bp-small: "only screen and (min-device-width: 300px) and (max-device-width: 480px)";
+
+/*Ipads (Portrait and landscape)*/
+$bp-med: "only screen and (min-device-width: 768px) and (max-device-width: 1024px)";

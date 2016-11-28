@@ -1,0 +1,30 @@
+	
+	#footer{
+
+		background-color: #D8D8D8;
+		width:100%;
+		height:150px;
+		margin-top: 100px;
+	}
+
+	.footerLinks{
+		width:75%;
+		margin:0px auto;
+		padding-top: 50px;
+	
+	}
+
+
+	#footer a {
+		margin-left: 8px;
+		color: #6E6E6E;
+	
+	}
+
+	.footerInfo {
+		font-size: 10px;
+		padding-top: 20px;
+		margin: 0px auto;
+		width: 75%;
+		color: #6E6E6E;
+	}

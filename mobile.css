@@ -1,0 +1,162 @@
+@media only screen and (min-device-width : 300px) and (max-device-width : 599px){
+
+/* Main Page Formatting */	
+	.page{
+		width:90%;
+	}
+
+	.headerWrapper{
+		width:90%;
+	}
+
+	#getHelp {
+		text-align: center;
+	}
+
+	#footer{
+		background-color: #D8D8D8;
+		width:100%;
+		height:200px;
+		position: relative;
+		margin-top: 50px;
+	}
+
+	.footerLinks a {
+		margin-left: 8px;
+		color: #6E6E6E;
+		display: block;
+		text-align: center;
+		margin-top: 5px;
+	}
+	
+	.footerLinks{
+		width:75%;
+		margin:0px auto;
+		padding-top: 10px;
+	
+	}
+
+	.footerInfo {
+		font-size: 10px;
+		padding-top: 20px;
+		margin: 0px auto;
+		width: 80%;
+		color: #6E6E6E;
+		text-align: center;
+	}
+
+	h1 {
+		text-align: center;
+	}	
+
+
+/*Question boxes */
+	.checkboxgroup{
+	display:inline-block;
+	margin-top: 10px;
+	text-align: center;
+	width: 80%;
+	}
+ 
+	.checkboxgroup--stacked label{
+		display:block;
+	}
+
+	.checkboxgroup{
+		display:inline-block;
+		margin-top: 10px;
+		text-align: center;
+		width: 80%;
+	}
+ 
+	.checkboxgroup--stacked label{
+		display:block;
+	}
+
+	#Multiple{
+		text-align: center;
+		margin-top: 5px;
+	}
+
+
+/*Comment Text Boxes */	
+
+	#commentSection{
+		text-align: center;
+	}
+	
+	#commentSection .main{
+		text-align: center;
+	}
+
+	textarea {
+		width: 90%;
+		height: 150px;
+	}
+
+	.upperText {
+		margin-left: 10px;
+	}
+
+	#box p {
+		margin-left: 10px;
+	}
+
+	.content{
+		margin-left: 10px;
+	}
+
+
+
+@media only screen and (min-device-width : 600px) and (max-device-width:801px){
+
+
+	.footerLinks a {
+		margin-left: 8px;
+		color: #6E6E6E;
+		display: inline-block;
+		margin-top: 5px;
+	}
+	
+	.footerLinks{
+		width:75%;
+		margin:0px auto;
+		padding-top: 20px;
+		text-align: center;
+
+	
+	}
+
+		.footerInfo {
+		font-family: Arial,sans-serif;
+		font-size: 10px;
+		padding-top: 20px;
+		margin: 0px auto;
+		width: 75%;
+		color: #6E6E6E;
+		text-align: center;
+
+		
+	}
+
+
+	#footer{
+
+		background-color: #D8D8D8;
+		width:100%;
+		height:200px;
+		position: relative;
+		margin-top: 50px;
+	}
+
+
+
+
+
+}
+
+
+
+
+
+

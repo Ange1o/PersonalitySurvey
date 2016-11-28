@@ -1,0 +1,67 @@
+
+
+.checkboxgroup{
+		display:inline-block;
+		background-color:#DEE0E2;
+		padding: 15px 25px 15px 25px;
+		margin-top: 10px;
+		text-align: center;
+		label {
+			display:block;
+			font-size: 14px; 
+			margin-top: 5px;
+			}
+		@media #{$bp-small}{
+			display:inline-block;
+			margin-top: 10px;
+			text-align: center;
+			width: 80%;
+			}
+		}	
+
+.checkboxgroup--stacked{
+	float: left;
+	clear: both;
+	label{
+		display:inline-block;
+		margin-left: 5px;
+		text-align: center;
+			@media #{$bp-small}{
+				display:block;
+			}
+		}	
+	}
+
+
+
+/* Format for when checkbox gets selected */
+.change {
+	border: 2px solid #F4FA58;
+	background-color: white;
+}
+
+/*Format for the radio button that don't change when selected*/
+#emailReminder{
+	margin-top: 10px;
+	padding-bottom: 10px;
+	border-left: thick solid #DEE0E2;
+ fieldset{
+	margin-left: 10px;
+	}
+	.answers{
+		@media #{$bp-small}{
+			margin-left: 55px;
+		}
+	}
+	.Multiple{
+		@media #{$bp-small}{
+			display:inline-block;
+			padding:0px 20px;
+		}
+	}
+	label{
+		@media #{$bp-small}{
+			display:block;
+		}
+	}
+}

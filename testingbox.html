@@ -1,0 +1,179 @@
+<html>
+<head>
+<title>GOV.UK</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+</head>
+<script type = "text/javascript">
+ function showDiv(obj) {
+    debugger
+    if (obj.checked) {
+     {document.getElementById('area').style.display = 'block';}
+					}
+	else
+		{
+	 {document.getElementById('area').style.display = 'none';}
+		}
+		
+					}
+</script>
+
+
+<body>
+<div id = "header">
+
+</div>
+
+
+
+
+<div id="page">
+	<br>
+	
+	<H1>Before you sign out</h1>
+	<P>Before you sign out, please complete this short survey to help us improve the service</p>
+	<p>The survey should take no more than 2 minutes</p>
+	<br>
+	<H2>Survey</h2>
+	<p>Don't include any personal or financial information, eg your name, address, bank or tax details or National Insurance number.</p>
+	<br>
+		<FORM NAME="visitorform" METHOD=POST ACTION="result.htm" TARGET="_top">
+		Do you pay any of the following?<br>
+		<br>
+		<INPUT ID="self" TYPE=CHECKBOX NAME="question1" CHECKED><LABEL FOR="self"> 	&nbsp;Self Assessment</LABEL>
+		<br>
+		<INPUT ID="vat" TYPE=CHECKBOX NAME="question1" ><LABEL FOR="vat"> 	&nbsp;VAT</LABEL>
+		<br>
+		<INPUT ID="tax" TYPE=CHECKBOX NAME="question1" ><LABEL FOR="tax"> 	&nbsp;Corporation Tax</LABEL>
+		<br>
+		<INPUT ID="paye" TYPE=CHECKBOX NAME="question1" ><LABEL FOR="paye"> 	&nbsp;PAYE(Employer)</LABEL>
+		<br>
+		<br>
+			Did you sign up for Self Assessment email reminders?<br>
+			<INPUT ID="yes" TYPE=RADIO NAME="question2" CHECKED><LABEL FOR= "yes"> 	&nbsp;Yes</label>
+			<br>
+			<INPUT ID="no" TYPE=RADIO NAME="question2"><LABEL FOR= "no"> 	&nbsp;No</label>
+		<br>
+		<br>
+		What is the main reason(s) for your visit today?<br>
+		<br>
+		<INPUT ID = "paid" TYPE =CHECKBOX NAME="question3" ><LABEL FOR = "paid"> 	&nbsp;Check what tax you've paid</label>
+		<BR>
+		<INPUT ID = "owe" TYPE =CHECKBOX NAME="question3" ><LABEL FOR = "owe"> 	&nbsp;Check what tax you owe</label>
+		<BR>
+		<INPUT ID = "complete" TYPE =CHECKBOX NAME="question3" ><LABEL FOR = "complete"> 	&nbsp;Complete or send a tax return</label>
+		<BR>
+		<INPUT ID = "payment" TYPE =CHECKBOX NAME="question3" ><LABEL FOR = "payment"> 	&nbsp;Make a payment or find out how to</label>
+		<BR>
+		<INPUT ID = "charge" TYPE =CHECKBOX NAME="question3" ><LABEL FOR = "charge"> 	&nbsp;Charge your Self Assessment reminder email address</label>
+		<BR>
+		<INPUT ID = "you" TYPE =CHECKBOX NAME="question3" ><LABEL FOR = "you"> 	&nbsp;You got a Self Assessment email reminder</label>
+		<BR>
+		<INPUT ID = "look" TYPE =CHECKBOX NAME="question3" ><LABEL FOR = "look"> 	&nbsp;Look at the new version of your online account</label>
+		<BR>
+		
+		<input type="checkbox" ID = "other" onclick="showDiv(obj)"/><LABEL FOR = "other"> 	&nbsp;Other</label>
+		<TEXTAREA id="area" style="display: none;" NAME="data" ROWS=10 COLS=50></TEXTAREA>
+		
+		<br>	
+		<br>
+		
+		
+		How easy was it to get to your Self Assessment tax statement?<br>
+		</br>
+	<div class = "checkboxgroup">
+		<INPUT ID="Veasy" TYPE=RADIO NAME="question4" onClick = "changeColour()" >
+		<LABEL FOR= "Veasy">Very Easy</label>
+	</div>
+		&nbsp;
+		<div class = "checkboxgroup">
+		<INPUT ID="Eas" TYPE=RADIO NAME="question4">
+		<LABEL FOR= "Eas">Easy</label>
+	</div>
+	<div class = "checkboxgroup">
+		<INPUT ID="Noopinion" TYPE=RADIO NAME="question4">
+		<LABEL FOR= "Noopinion">No opinion</label>
+	</div>
+	<div class = "checkboxgroup">
+		<INPUT ID="Diffi" TYPE=RADIO NAME="question4">
+		<LABEL FOR= "Diffi">Difficult</label>
+	</div>
+	<div class = "checkboxgroup">
+		<INPUT ID="Vdiffi" TYPE=RADIO NAME="question4">
+		<LABEL FOR= "Vdiffi">Very Difficult</label>
+	</div>
+		<br>
+		<br>
+		
+		How easy was it to do what you wanted?<br>
+		</br>
+	<div class = "checkboxgroup">
+		<INPUT ID="Very" TYPE=RADIO Name="question5">
+		<LABEL FOR = "Very">Very Easy</label>
+	</div>
+	<div class = "checkboxgroup">
+		<INPUT ID="Easy" TYPE=RADIO Name="question5">
+		<LABEL FOR = "Easy">Easy</label>
+	</div>
+	<div class = "checkboxgroup">
+		<INPUT ID="None" TYPE=RADIO Name="question5">
+		<LABEL FOR = "None">No opinion</label>
+	</div>
+	<div class = "checkboxgroup">
+		<INPUT ID="difficult" TYPE=RADIO Name="question5">
+		<LABEL FOR = "difficult">Difficult</label>
+	</div>
+	<div class = "checkboxgroup">
+		<INPUT ID="vdifficult" TYPE=RADIO Name="question5">
+		<LABEL FOR = "vdifficult">Very Difficult</label>
+	</div>
+		<br>
+		<br>
+		
+		
+		Overall, how do rate the new version of your online account?<br>
+		</br>
+	<div class = "checkboxgroup">
+		<INPUT ID="vGood" TYPE=RADIO name="question6">
+		<LABEL FOR ="vGood">Very good</label>
+	</div>
+	<div class = "checkboxgroup">
+		<INPUT ID="Good" TYPE=RADIO name="question6">
+		<LABEL FOR = "Good">Good</label>
+	</div>
+	<div class = "checkboxgroup">
+		<INPUT ID="opinion" TYPE=RADIO name="question6">
+		<LABEL FOR = "opinion">No opinion</LABEL>
+	</div>
+	<div class = "checkboxgroup">
+		<INPUT ID ="poor" TYPE=RADIO name="question6">
+		<LABEL FOR = "poor">Poor</label>
+	</div>
+	<div class = "checkboxgroup">
+		<INPUT ID ="vpoor" TYPE=RADIO name="question6">
+		<LABEL FOR = "vpoor">Very Poor</label>
+	</div>
+
+		<br>
+		<br>
+		<br>
+	<label for = "comments">
+	Any other comments?<br>
+	</label>
+	<textarea id="comments" maxlength= "2500">
+	</textarea>
+	<br>
+	<font size = "2">(Limit is 2500 characters)</font><br>
+	<br>
+	<input type ="submit" value="Submit and sign out" />
+	</form>
+</div>
+
+<div id="footer">
+
+</div>
+</body>
+
+
+
+</html>

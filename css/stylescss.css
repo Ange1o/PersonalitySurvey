@@ -1,0 +1,251 @@
+/*Media Queries*/
+/*Smartphones (Portrait and landscape)*/
+/*Ipads (Portrait and landscape)*/
+.checkboxgroup {
+  display: inline-block;
+  background-color: #DEE0E2;
+  padding: 15px 25px 15px 25px;
+  margin-top: 10px;
+  text-align: center; }
+  .checkboxgroup label {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px; }
+  @media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
+    .checkboxgroup {
+      display: inline-block;
+      margin-top: 10px;
+      text-align: center;
+      width: 80%; } }
+
+.checkboxgroup--stacked {
+  float: left;
+  clear: both; }
+  .checkboxgroup--stacked label {
+    display: inline-block;
+    margin-left: 5px;
+    text-align: center; }
+    @media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
+      .checkboxgroup--stacked label {
+        display: block; } }
+
+/* Format for when checkbox gets selected */
+.change {
+  border: 2px solid #F4FA58;
+  background-color: white; }
+
+/*Format for the radio button that don't change when selected*/
+#emailReminder {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-left: thick solid #DEE0E2; }
+  #emailReminder fieldset {
+    margin-left: 10px; }
+  @media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
+    #emailReminder .answers {
+      margin-left: 55px; } }
+  @media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
+    #emailReminder .Multiple {
+      display: inline-block;
+      padding: 0px 20px; } }
+  @media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
+    #emailReminder label {
+      display: block; } }
+
+#commentSection {
+  margin-top: 20px; }
+  @media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
+    #commentSection {
+      text-align: center; } }
+  #commentSection .text {
+    font-size: 10px;
+    display: block;
+    margin: 5px 0px 5px 5px; }
+  #commentSection input {
+    margin: 10px 0px 0px 5px;
+    width: 175px;
+    height: 35px;
+    background-color: #459F45;
+    font-size: 15px;
+    color: white; }
+  @media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
+    #commentSection .main {
+      text-align: center; } }
+
+#getHelp {
+  margin: 10px; }
+  @media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
+    #getHelp {
+      text-align: center; } }
+  #getHelp a {
+    color: #585858;
+    font-size: 12px; }
+
+#footer {
+  background-color: #D8D8D8;
+  width: 100%;
+  height: 150px;
+  margin-top: 100px; }
+  @media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
+    #footer {
+      height: 200px;
+      position: relative;
+      margin-top: 50px; } }
+  #footer a {
+    margin-left: 8px;
+    color: #6E6E6E; }
+  #footer .footerLinks {
+    width: 75%;
+    margin: 0px auto;
+    padding-top: 50px; }
+    @media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
+      #footer .footerLinks {
+        padding-top: 10px; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+      #footer .footerLinks {
+        text-align: center; } }
+    @media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
+      #footer .footerLinks a {
+        display: block;
+        text-align: center;
+        margin-top: 5px; } }
+  #footer .footerInfo {
+    font-size: 10px;
+    padding-top: 20px;
+    margin: 0px auto;
+    width: 75%;
+    color: #6E6E6E; }
+    @media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
+      #footer .footerInfo {
+        width: 80%;
+        text-align: center; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+      #footer .footerInfo {
+        text-align: center; } }
+
+textarea {
+  width: 325px;
+  height: 125px;
+  background-color: #DEE0E2;
+  font-size: 14px;
+  resize: none;
+  overflow: auto; }
+  @media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
+    textarea {
+      width: 90%;
+      height: 150px; } }
+
+h1 {
+  font-size: 35px;
+  font-weight: bold; }
+  @media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
+    h1 {
+      font-size: 26px;
+      text-align: center; } }
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
+  h2 {
+    text-align: center;
+    font-size: 22px; } }
+
+.subheader a {
+  color: #58ACFA; }
+
+.para1 {
+  font-size: 14px;
+  padding-top: 10px; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+.upperText {
+  font-size: 14px;
+  display: block;
+  margin: 15px 0px 5px 25px;
+  padding-top: 10px; }
+  @media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
+    .upperText {
+      margin-left: 10px; } }
+
+.content {
+  background-color: #ECECEC;
+  overflow: scroll;
+  margin-left: 25px; }
+  @media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
+    .content {
+      margin-left: 10px; } }
+
+#box {
+  border-left: thick solid #DEE0E2; }
+  #box p {
+    font-size: 12px;
+    margin-left: 25px;
+    padding-bottom: 10px; }
+    @media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
+      #box p {
+        margin-left: 10px; } }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.page {
+  width: 75%;
+  margin: 0px auto; }
+  @media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
+    .page {
+      width: 90%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .page {
+      width: 90%; } }
+
+.main {
+  font-size: 14px;
+  margin-bottom: 8px; }
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px; }
+
+.header {
+  background-color: black;
+  height: 50px;
+  width: 100%;
+  position: relative; }
+  .header .headerWrapper {
+    width: 75%;
+    height: 50px;
+    margin: 0px auto 0px; }
+    @media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
+      .header .headerWrapper {
+        width: 90%; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+      .header .headerWrapper {
+        width: 90%; } }
+  .header .headerText {
+    position: relative;
+    top: 15px;
+    overflow: visible;
+    font-size: 20px;
+    color: #FFFFFF;
+    width: 100px; }
+
+.subheader {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px; }
+
+.blueLine HR {
+  color: blue;
+  background-color: #005ea5;
+  height: 8px;
+  margin-top: 0px;
+  border-top: 0px; }
+
+/*# sourceMappingURL=stylescss.css.map */
