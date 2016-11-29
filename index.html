@@ -3,314 +3,140 @@
 <html>
 
 	<head>
-		<title>GOV.UK</title>
-			
+		<title>容格性格测试</title>
 			<link rel="stylesheet" type="text/css" href="css/stylescss.css">
-
 	</head>
-
-			
+		
 
 <body>
-	
 	<div class = "header"> 
 		<div class = "headerWrapper">
-
-
-
-			<div class = "headerText">Welcome to GOV.UK</div>
-
-
+			<div class = "headerText">性格测试</div>
 
 		</div>
 	</div>
 
 
-
-
 	<div class="page">
-				
 				<div class = "blueLine"><HR></div>
-					<div class = "subheader">This is a <a href  = "">trial service</a>. Help us improve - send your <a href = "">feedback</a></div>
+					<div class = "subheader">以下有40个问题，请依次回答</div>
 					<HR>
 						
-					<div class = "para1">	
-						<H1>Before you sign out</h1>
-						<P>Before you sign out, please complete this short survey to help us improve the service</p>
-						<p>The survey should take no more than 2 minutes</p>
-						<button>No thanks - sign me out</button>
-					</div>
-						
-					<div class = "para1">
-						<H2>Survey</h2>
-						<p>Don't include any personal or financial information, eg your name, address, bank or tax details or National Insurance number.</p>
-					</div>	
-		
-		
-
-			<FORM NAME="visitorform" METHOD=POST ACTION="/test" TARGET="_blank" onsubmit ="return confirm('Do you want to submit the form');" >
-
-		
-		
-					
-					
-							
-			<fieldset>	
-							<legend class = "main">Do you pay any of the following?</legend>			
-						
-							<div class = "checkboxgroup checkboxgroup--stacked">
-								<INPUT ID="self" TYPE=CHECKBOX NAME="question1"><LABEL FOR="self"> Self Assessment</LABEL>
-							</div>
-							
-							
-						
-							<div class = "checkboxgroup checkboxgroup--stacked">
-								<INPUT ID="vat" TYPE=CHECKBOX NAME="question1" ><LABEL FOR="vat">VAT</LABEL>
-							</div>
-						
-							
-
-							<div class = "checkboxgroup checkboxgroup--stacked">
-								<INPUT ID="tax" TYPE=CHECKBOX NAME="question1" ><LABEL FOR="tax">Corporation Tax</LABEL>
-							</div>
-						
-							
-						
-							<div class = "checkboxgroup checkboxgroup--stacked">
-								<INPUT ID="paye" TYPE=CHECKBOX NAME="question1" ><LABEL FOR="paye">PAYE(Employer)</LABEL>
-							</div>
-
-			</fieldset>				
-
-					
-				
-
-
-					
-					<div id = "emailReminder">
-						<fieldset>	
-							<legend class = "main">Did you sign up for Self Assessment email reminders?</legend>
-									<div class = "answers">
-										<div class = "Multiple">	
-											<INPUT ID="yes" TYPE=RADIO NAME="question2"><LABEL FOR= "yes">Yes</label>
-										</div>
-
-										<div class = "Multiple">	
-											<INPUT ID="no" TYPE=RADIO NAME="question2"><LABEL FOR= "no"> No</label>	
-										</div>
-									</div>
-						</fieldset>
-					</div>	
-								
-								
-								
-				
-
-
-			
-
 
 			<fieldset>
-
-					<legend class = "main">What is the main reason(s) for your visit today?</legend>
-						
-						
-
-						<div class = "checkboxgroup checkboxgroup--stacked">
-							<INPUT ID = "paid" TYPE =CHECKBOX NAME="question3" ><LABEL FOR = "paid">Check what tax you've paid</label>
-						</div>
-
-						
-					
-						<div class = "checkboxgroup checkboxgroup--stacked">
-							<INPUT ID = "owe" TYPE =CHECKBOX NAME="question3" ><LABEL FOR = "owe">Check what tax you owe</label>
-						</div>
-					
-						
-
-							
-						<div class = "checkboxgroup checkboxgroup--stacked">
-							<INPUT ID = "complete" TYPE =CHECKBOX NAME="question3" ><LABEL FOR = "complete">Complete or send a tax return</label>
-						</div>
-					
-						
-					
-						<div class = "checkboxgroup checkboxgroup--stacked">
-							<INPUT ID = "payment" TYPE =CHECKBOX NAME="question3" ><LABEL FOR = "payment">Make a payment or find out how to</label>
-						</div>
-					
-						
-					
-						<div class = "checkboxgroup checkboxgroup--stacked">
-							<INPUT ID = "charge" TYPE =CHECKBOX NAME="question3" ><LABEL FOR = "charge">Charge your Self Assessment reminder email address</label>
-						</div>
-					
-
-					
-						<div class = "checkboxgroup checkboxgroup--stacked">
-							<INPUT ID = "you" TYPE =CHECKBOX NAME="question3" ><LABEL FOR = "you">You got a Self Assessment email reminder</label>
-						</div>
-						
-					
-						<div class = "checkboxgroup checkboxgroup--stacked">
-							<INPUT ID = "look" TYPE =CHECKBOX NAME="question3" /><LABEL FOR = "look">Look at the new version of your online account</label>
-						</div>
-
-
-						<div class = "checkboxgroup checkboxgroup--stacked">
-							<input type="checkbox" ID = "other" onchange="changeClass(this)"/><LABEL FOR = "other">Other</label>
-						</div>
-
-				</fieldset>
-
-						<div id ="box" class="hide">
-								
-								<label class="upperText">Please specify</label>
-								<textarea class="content"></textarea>
-								<p>(Limit is 2500 characters)</p>
-								
-
-						</div>
-					
-
-			
-		
-
-							
-					
-
-
-			<fieldset>
-					<legend class = "main">How easy was it to get to your Self Assessment tax statement?</legend>
+					<legend class = "main"><H2>1.经常被别人说自己找“借口”</h2></legend>
 									
 					<div class = "checkboxgroup">
-						<INPUT ID="Veasy" TYPE=RADIO NAME="question4" >
-						<LABEL FOR= "Veasy">Very easy</label>
+						<input id="q1y" type="radio" name="q1" value=2 >
+						<label>是</label>
 					</div>
 						
 					<div class = "checkboxgroup">
-						<INPUT ID="Eas" TYPE=RADIO NAME="question4">
-						<LABEL FOR= "Eas">Easy</label>
+						<input id="q1n" type="radio" name="q1" value=0>
+						<label >否</label>
 					</div>
 
 					<div class = "checkboxgroup">
-						<INPUT ID="Noopinion" TYPE=RADIO NAME="question4">
-						<LABEL FOR= "Noopinion">No opinion</label>
-					</div>
-
-					<div class = "checkboxgroup">
-						<INPUT ID="Diffi" TYPE=RADIO NAME="question4">
-						<LABEL FOR= "Diffi">Difficult</label>
-					</div>
-
-					<div class = "checkboxgroup">
-						<INPUT ID="Vdiffi" TYPE=RADIO NAME="question4">
-						<LABEL FOR= "Vdiffi">Very Difficult</label>
+						<input id="q1yn" type="radio" name="q1" value=1>
+						<label>两者皆不</label>
 					</div>
 			</fieldset>
 					
-						
-							
-							
-					
-
-
-
-
-
-			<fieldset>	
-					<legend class = "main">How easy was it to do what you wanted?</legend>
-				
-						<div class = "checkboxgroup">
-							<INPUT ID="Very" TYPE=RADIO Name="question5">
-							<LABEL FOR = "Very">Very easy</label>
-						</div>
-
-
-						<div class = "checkboxgroup">
-							<INPUT ID="Easy" TYPE=RADIO Name="question5">
-							<LABEL FOR = "Easy">Easy</label>
-						</div>
-
-						<div class = "checkboxgroup">
-							<INPUT ID="None" TYPE=RADIO Name="question5">
-							<LABEL FOR = "None">No opinion</label>
-						</div>
-
-						<div class = "checkboxgroup">
-							<INPUT ID="difficult" TYPE=RADIO Name="question5">
-							<LABEL FOR = "difficult">Difficult</label>
-						</div>
-
-						<div class = "checkboxgroup">
-							<INPUT ID="vdifficult" TYPE=RADIO Name="question5">
-							<LABEL FOR = "vdifficult">Very Difficult</label>
-						</div>
-				</fieldset>
-					
-							
-							
-					
-
-
-				<fieldset>
-						<legend class = "main">Overall, how do rate the new version of your online account?</legend>	
-							<div class = "checkboxgroup">
-								<INPUT ID="vGood"  TYPE=RADIO name="question6">
-								<LABEL FOR ="vGood">Very good</label>
-							</div>
-
-							<div class = "checkboxgroup">
-								<INPUT ID="Good"  TYPE=RADIO name="question6">
-								<LABEL FOR = "Good">Good</label>
-							</div>
-
-							<div class = "checkboxgroup">
-								<INPUT ID="opinion" TYPE=RADIO name="question6">
-								<LABEL FOR = "opinion">No opinion</LABEL>
-							</div>
-
-							<div class = "checkboxgroup">
-								<INPUT ID ="poor"  TYPE=RADIO name="question6">
-								<LABEL FOR = "poor">Poor</label>
-							</div>
-
-							<div class = "checkboxgroup">
-								<INPUT ID ="vpoor"  TYPE=RADIO name="question6">
-								<LABEL FOR = "vpoor">Very Poor</label>
-							</div>
-				</fieldset>	
-								
-							
 			
 
-
-
-
-
-					<div id = "commentSection">
-								<label for = "comments"></label>
-								<div class = "main">Any other comments?</div>
-								<textarea id="comments" maxlength= "2500">
-								</textarea>
-								<div class = "text">(Limit is 2500 characters)</div>
-								<input type ="submit" value="Submit and sign out" />
+			<fieldset>
+					<legend class = "main"><H2>2.擅长一个人深入思考某种事物</h2></legend>
+									
+					<div class = "checkboxgroup">
+						<input id="q2y" type="radio" name="q2" value=2 >
+						<label>是</label>
 					</div>
-			</FORM>
-					
 						
+					<div class = "checkboxgroup">
+						<input id="q2n" type="radio" name="q2" value=0>
+						<label >否</label>
+					</div>
 
-								<div id = "getHelp"><a href = "">Get help with this page.</a></div>
-	</div>
+					<div class = "checkboxgroup">
+						<input id="q2yn" type="radio" name="q2" value=1>
+						<label>两者皆不</label>
+					</div>
+			</fieldset>
 
+			<fieldset>
+					<legend class = "main"><H2>3.情感丰富</h2></legend>
+									
+					<div class = "checkboxgroup">
+						<input id="q3y" type="radio" name="q3" value=2 >
+						<label>是</label>
+					</div>
+						
+					<div class = "checkboxgroup">
+						<input id="q3n" type="radio" name="q3" value=0>
+						<label >否</label>
+					</div>
+
+					<div class = "checkboxgroup">
+						<input id="q3yn" type="radio" name="q3" value=1>
+						<label>两者皆不</label>
+					</div>
+			</fieldset>
+
+			<fieldset>
+					<legend class = "main"><H2>4.只能和关系密切的人聊天</h2></legend>
+									
+					<div class = "checkboxgroup">
+						<input id="q4y" type="radio" name="q4" value=2 >
+						<label>是</label>
+					</div>
+						
+					<div class = "checkboxgroup">
+						<input id="q4n" type="radio" name="q4" value=0>
+						<label >否</label>
+					</div>
+
+					<div class = "checkboxgroup">
+						<input id="q4yn" type="radio" name="q4" value=1>
+						<label>两者皆不</label>
+					</div>
+			</fieldset>
+
+			<div id = "commentSection">
+								<input id = "submit1" type ="submit" value="提交结果" />
+					</div>		
+
+
+					
+<div id="error" style="display: none;">
+请填完！
+</div>
+
+
+<div id="output" style="display: none;">
+<br></br>
+<HR>
+<div> 
+
+<div><H2>结果</H2></div>
+
+<span id="p1"></span> <span style="font-size: 150%">nishuyu</span>
+
+
+</div>
+				
+
+
+</div>
 
 	<div id = "footer">
-								<div class = "footerLinks"><a href = "">Help</a><a href = "">Cookies</a><a href = "">Privacy policy</a><a href = "">Terms and conditions</a></div>
-								<div class = "footerInfo">All content is available under the<a href = "">Open Goverment Licence v2.0</a> except where otherwise stated</div>
+								<div class = "footerInfo" >该测试由瑞士心理学家容格提出，结果仅供参考。
+								</div>
+								<div class = "footerInfo">by Angelo, 2016
+								</div>
+								
 								
 	</div>
-			<script src = "jquery-1.11.1.js"></script>
-			<script src ="script.min.js"></script>
+			<script src = "js/scripts.js"></script>
 </body>
 
 
